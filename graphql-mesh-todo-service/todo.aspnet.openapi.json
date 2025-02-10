@@ -1,19 +1,19 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "TodoAPI",
+    "title": "ASPNET Todo API",
     "version": "1.0"
   },
   "servers": [
     {
-      "url": "http://localhost:3000"
+      "url": "http://localhost:5166"
     }
   ],
   "paths": {
-    "/todos": {
+    "/aspnet/todoitems": {
       "get": {
         "tags": [
-          "TodoAPI"
+          "ASPNETTodoAPI"
         ],
         "responses": {
           "200": {
@@ -23,7 +23,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Todo"
+                    "$ref": "#/components/schemas/TodoItemAspNet"
                   }
                 }
               }
@@ -33,13 +33,13 @@
       },
       "post": {
         "tags": [
-          "TodoAPI"
+          "ASPNETTodoAPI"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Todo"
+                "$ref": "#/components/schemas/TodoItemAspNet"
               }
             }
           },
@@ -51,18 +51,18 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Todo"
+                  "$ref": "#/components/schemas/TodoItemAspNet"
                 }
               }
             }
           }
         }
       }
-    },    
-    "/todos/{id}": {      
+    },
+    "/aspnet/todoitems/{id}": {
       "delete": {
         "tags": [
-          "TodoAPI"
+          "ASPNETTodoAPI"
         ],
         "parameters": [
           {
@@ -85,7 +85,7 @@
   },
   "components": {
     "schemas": {
-      "Todo": {
+      "TodoItemAspNet": {
         "type": "object",
         "properties": {
           "id": {

@@ -5,12 +5,12 @@ export const composeConfig = defineConfig({
   subgraphs: [
     {
       sourceHandler: loadOpenAPISubgraph('Todo: ASP.NET', {
-        source: './todo-rest-api-asp-net/todo.aspnet.openapi.json'
+        source: './todo.aspnet.openapi.json'
       })
     },
     {
       sourceHandler: loadOpenAPISubgraph('Todo: Express', {
-        source: './todo-rest-api-express/todo.express.openapi.json'
+        source: './todo.express.openapi.json'
       })
     }
   ]

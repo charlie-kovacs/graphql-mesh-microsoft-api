@@ -4,7 +4,7 @@ app.use(express.json());
 
 let todos = [];
 
-app.post("/todos", (request, response) => {
+app.post("/expressapp/todos", (request, response) => {
   const newToDo = request.body;
 
   const createdToDo = {
@@ -18,11 +18,11 @@ app.post("/todos", (request, response) => {
   response.status(201).json(createdToDo);
 });
 
-app.get("/todos", (request, response) => {
+app.get("/expressapp/todos", (request, response) => {
   response.json(todos);
 });
 
-app.delete("/todos/:id", (request, response) => {
+app.delete("/expressapp/todos/:id", (request, response) => {
   const idToDelete = parseInt(request.params.id, 10);
   const index = todos.findIndex((todo) => todo.id === idToDelete);
   if (index !== -1) {
