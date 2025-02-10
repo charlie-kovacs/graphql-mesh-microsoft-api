@@ -56,7 +56,7 @@ mutation Post_aspnet_todoitems {
 ```
 
 Mutation response:
-```graphql
+```json
 {
     "errors": [
         {
@@ -112,7 +112,7 @@ query Aspnet_todoitems {
 ```
 
 Query response:
-```graphql
+```json
 {
     "data": {
         "expressapp_todos": [
