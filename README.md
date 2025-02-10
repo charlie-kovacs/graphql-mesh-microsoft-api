@@ -95,7 +95,7 @@ Mutation response:
 }
 ```
 
-Now, run the following query. Both upstream APIs will return the ToDo items that were created in each. The Express-based API behaves as expected. The ASP.NET API does not given the `405` error.
+Now, run the following query. Both upstream APIs will return the ToDo items that were created in each even though the ASP.NET API had a 405.
 ```graphql
 query Aspnet_todoitems {
     aspnet_todoitems {
