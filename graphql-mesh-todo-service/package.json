@@ -1,0 +1,17 @@
+{
+  "name": "graphql-mesh-todo-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@graphql-hive/gateway": "^1.9.4",
+    "@graphql-mesh/compose-cli": "^1.3.7",
+    "@omnigraph/openapi": "^0.108.17"
+  }
+}
